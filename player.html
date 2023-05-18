@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Player</title>
+  <style>
+    /* Custom Styles for Embedded Player */
+    .player-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+      padding: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .player-container audio {
+      width: 200px;
+    }
+
+    .player-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="player-container">
+    <audio id="radioPlayer" src="https://www.partyvibe.com:8060/;listen.pls?sid=1" autoplay controls></audio>
+    <img id="coverArt" src="default-cover.jpg" alt="Cover Art">
+  </div>
+
+  <script>
+    // JavaScript to fetch cover art
+    const player = document.getElementById("radioPlayer");
+    const coverArt = document.getElementById("coverArt");
+
+    function fetchCoverArt(songTitle) {
+      // Fetch cover art logic
+    }
+
+    player.addEventListener("play", () => {
+      const currentSongTitle = "Song Title"; // Replace with the actual song title retrieval logic
+      fetchCoverArt(currentSongTitle);
+    });
+
+    player.volume = 0.5; // Set the volume to 50% (0.0 - 1.0)
+  </script>
+</body>
+
+</html>

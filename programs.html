@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Global Styles */
+    body {
+  background-color: #f2f2f2; /* Set your desired background color */
+  background-image: url("img/istockphoto-1253429855-170667a.jpg"); /* Set the path to your desired background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Online Radio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programs.html">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="programsSection" class="container mt-5">
+    <h2>Programs</h2>
+    <div class="card-deck mt-4">
+      <div class="card">
+        <img class="card-img-top" src="img/EbqYDBRXYAAVI11.jpg" alt="Program 1">
+        <div class="card-body">
+          <h5 class="card-title">RyseNShyne</h5>
+          <p class="card-text">Enjoy your morning with exlusive entertainment, sports fashion, movie and more with Chelsy Sey and DJGUNSHOT</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="img/download (15).jpeg" alt="Program 2">
+        <div class="card-body">
+          <h5 class="card-title">Lyricist Lounge</h5>
+          <p class="card-text">Lyricist Lounge comes your this and every saturday, experiece new talents as they spit bars</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="img/SHOUTSONY.jpg" alt="Program 3">
+        <div class="card-body">
+          <h5 class="card-title">ShoutsOnly Show</h5>
+          <p class="card-text">ShoutsOnly comes your way this and every Sunday where you can make a song request for your loved ones</p
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // JavaScript to include the player on each page
+      const playerContainer = document.createElement("div");
+      playerContainer.setAttribute("id", "playerContainer");
+      document.body.appendChild(playerContainer);
+    
+      // Load the player.html content into the playerContainer div
+      fetch("player.html")
+        .then(response => response.text())
+        .then(html => {
+          playerContainer.innerHTML = html;
+        });
+    </script>
+    
+  
+    <footer class="bg-light text-center py-4">
+      <p>&copy; 2023 Online Radio. All rights reserved.</p>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+  
+  </html>
+  
